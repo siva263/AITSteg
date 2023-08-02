@@ -78,6 +78,4 @@ Clone the repository and run the following commands-
 `Backend` : Python3,Flask  <br>
 `Frontend` : Html,CSS  <br>
 
-<h3 align="center"><b>Developed with :heart: by <a href="https://github.com/Sakshi107">Sakshi Shelar</a></b>, <b><a href="https://github.com/nishigthb">Nishi Shah</a></b> and <b><a href="https://github.com/sakship31/">Sakshi Pandey</a></b></h3>
-
 
