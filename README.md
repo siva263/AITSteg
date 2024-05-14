@@ -1,30 +1,3 @@
-<h1 align="center">
-  <br>
-  <span> :male_detective: Text Cloak :female_detective: </span>
-  <br>
-  
-  [![](https://img.shields.io/badge/Made_with-Python3-blue?style=for-the-badge&logo=python)](https://www.python.org "Python3")[![](https://img.shields.io/badge/Made_with-Flask-blue?style=for-the-badge&logo=Flask)](https://flask.palletsprojects.com/en/1.1.x/ "Flask")
-
-</h1>
-<span><h4 align="center">The Cloak of Invisibility for your texts</h4></span>
-
-<p align="justify">
-Text Cloak is a steganography technique implemented in python, to hide secrets inside text by encrypting the secret before cloaking it with special unicode invisible characters. 
-It can be used to safely watermark strings, invisible scripts on webpages, texts on social media or for any other covert communication. Completely invisible! 
-<p>
-
-## Resources 
-
-The following paper was implemented for generating and embedding Zero Width Characters in cover message and extracting the secret message from the cover message and generating ascii from extracted Zero Width Characters. 
-
-
-
-- Taleby Ahvanooey, Milad & Li, Qianmu & Hou, Jun & Dana Mazraeh, Hassan & Zhang, Jing.
-```
-AITSteg: An Innovative Text Steganography Technique for Hidden Transmission of Text Message via Social Media.
-IEEE Access
-```
-
 ## Features
 - Protect your invisible secret using passwords
 - Cryptographically secure by encrypting the invisible secret using AES-256-CTR encryption and decryption.
@@ -39,26 +12,6 @@ IEEE Access
 - Extract algorithm: To extract the secret message from the cover message by converting it back into ascii characters from invisible zero width unicode characters.
 - AES-encryption: We take password for encrypting the secret message before embeding it,the key for encryption is generated from the password based key derivation function PBKDF2.
 - AES-decryption: For decrpytion,we need to pass the same password used while encryption since AES-256 is a symmetric cipher.
-
-### Demo ###
-----------------------------------------------------------------------------------------
-![](https://github.com/sakship31/Text-steganography/blob/master/assets/demo.gif)
-
-### Screensots ###
-----------------------------------------------------------------------------------------
-
-### Enter secret message to be sent, cover message and passowrd ###
-![](https://github.com/sakship31/Text-steganography/blob/master/assets/1.PNG)
-<br>
-### On clicking Hide button, the cover message with embedded secret message is displayed and copied to clipboard ###
-![](https://github.com/sakship31/Text-steganography/blob/master/assets/2.PNG)
-<br>
-### Enter received embedded cover message and mutually decided password ###
-![](https://github.com/sakship31/Text-steganography/blob/master/assets/3.PNG)
-<br>
-### On clicking Reveal button, the secret message is displayed ###
-![](https://github.com/sakship31/Text-steganography/blob/master/assets/4.PNG)
----------------------------------------------------------------------------------------
 
 #### Installation
 Install the dependency for AES by running:
