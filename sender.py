@@ -4,7 +4,6 @@ sys.path
 from embed import embedFunc
 from extract import extractFunc
 from AES import encrypt,decrypt
-import pyperclip as py
 import clipboard
 # SM=input("Enter secret message:")
 # CM=input("Enter cover message:")
