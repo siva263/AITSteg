@@ -5,7 +5,7 @@ from embed import embedFunc
 from extract import extractFunc
 from AES import encrypt,decrypt
 import pyperclip as py
-
+import clipboard
 # SM=input("Enter secret message:")
 # CM=input("Enter cover message:")
 # password=input("Enter password for encryption:")
@@ -15,7 +15,7 @@ def hideFunc(SM,password,CM):
     print("Encrypted secret message going to send:",encSM)
     CM_HM=embedFunc(encSM,CM)
     print("Cover message=",CM_HM)
-    py.copy(CM_HM)
+    clipboard.copy(CM_HM)
     return CM_HM
     
 
