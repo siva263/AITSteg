@@ -4,8 +4,6 @@ pygetwindow
 pyperclip==1.8.2
 gtk
 PyQt4
-sudo apt-get install xclip
-sudo apt-get install xsel
 anyio==4.2.0
 argon2-cffi==23.1.0
 argon2-cffi-bindings==21.2.0
