@@ -1,4 +1,5 @@
 Gunicorn
+clipboard
 anyio==4.2.0
 argon2-cffi==23.1.0
 argon2-cffi-bindings==21.2.0
