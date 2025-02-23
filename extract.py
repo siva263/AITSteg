@@ -27,20 +27,9 @@ ZWC_reverse={u'\u200C':"00",u'\u202C':"01",u'\u202D':"10",u'\u200E':"11"}
 #CM_HM=input("Enter the cover message:")
 #password=input("Enter password:")
 
-def clean_cover_message(cover_message):
-    """Remove any existing zero-width characters from the cover message."""
-    zwc = [u'\u200C', u'\u202C', u'\u202D', u'\u200E']
-    for char in zwc:
-        cover_message = cover_message.replace(char, '')
-    return cover_message
-
-#Clean the cover message before extracting
-
-
-
 def extractFunc(CM_HM):
   global SM_extract,MR_SK,hashed_SM_binary_extract,ZWC_reverse
-  CM_HM = clean_cover_message(CM_HM)
+  
   for letter in CM_HM:
     if(letter in ZWC_reverse):
       hashed_SM_binary_extract+=ZWC_reverse[letter]
