@@ -1,4 +1,4 @@
-from flask import Flask,request
+from flask import Flask,request,session
 from flask import render_template,url_for
 
 from sender import hideFunc
@@ -8,6 +8,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
+    session.pop('result_reveal',None)
     return render_template("homepage.html")
 
 @app.route("/hide",methods=['POST','GET'])
