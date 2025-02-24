@@ -26,7 +26,7 @@
       <div class="row">
         <div class="col-sm-6">
           <div class="form-class">
-            <form action="/hide" method="POST">
+            <form action="/hide" autocomplete="off" method="POST">
               <p><b>HIDE </b></p>
               <hr>
               <label for="sec_msg"><b>Secret </b></label><br>
@@ -35,7 +35,7 @@
               <label for="psw"><b>Password</b></label><br>
               <input type="password" placeholder="Enter Password" name="psw" id="psw" required><br>
               <label for="psw"><b> Cover Message</b></label><br>
-              <input type="text" placeholder="Enter your message" name="cvr_msg" id="cvr_msg" required>
+              <input type="text" autocomplete="false" placeholder="Enter your message" name="cvr_msg" id="cvr_msg" required>
               <br>
               <button type="submit" class="hidebtn" onclick="onButtonClickHide()">Hide    <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
               {% if result %}
@@ -53,7 +53,7 @@
               <label for="psw_rev"><b>Password</b></label><br>
               <input type="password" placeholder="Enter Password" name="psw_rev" id="psw_rev" required><br>
               <label for="psw_rev"><b> Steg Message</b></label><br>
-              <input type="text" placeholder="Enter your steg message" name="steg_msg" id="steg_msg" required>
+              <input type="text" autocomplete="false" placeholder="Enter your steg message" name="steg_msg" id="steg_msg" required>
               <br>
               <button type="submit" class="revealbtn" onclick="onButtonClickReveal()">Get Secret    <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
               {% if result_reveal %}
