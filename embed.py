@@ -42,18 +42,10 @@ SM_binary=""
 ZWC={"00":u'\u200C',"01":u'\u202C',"10":u'\u202D',"11":u'\u200E'}
 ZWC_reverse={u'\u200C':"00",u'\u202C':"01",u'\u202D':"10",u'\u200E':"11"}
 
-def clean_cover_message(cover_message):
-    """Remove any existing zero-width characters from the cover message."""
-    zwc = [u'\u200C', u'\u202C', u'\u202D', u'\u200E']
-    for char in zwc:
-        cover_message = cover_message.replace(char, '')
-    return cover_message
-
 
 def embedFunc(SM,CM):
   global MS_SK,SM_binary,ZWC,ZWC_reverse
-  # Clean any leftover zero-width characters
-  CM = clean_cover_message(CM)
+    
 
   for letter in SM:
     n=ord(letter)
