@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("homepage.html", result_reveal=None)
+    return render_template("homepage.html")
 
 @app.route("/hide",methods=['POST','GET'])
 def hide():
