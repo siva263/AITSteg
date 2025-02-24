@@ -1,5 +1,5 @@
 from flask import Flask,request,session
-from flask import render_template,url_for
+from flask import render_template,url_for,redirect
 
 from sender import hideFunc
 from receiver import revealFunc
@@ -8,8 +8,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    session.pop('result_reveal', None)
-    return render_template("homepage.html")
+    return render_template("homepage.html", result_reveal=None)
 
 @app.route("/hide",methods=['POST','GET'])
 def hide():
