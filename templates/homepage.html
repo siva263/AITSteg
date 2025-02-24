@@ -69,7 +69,7 @@
               <hr>
               <label for="psw_rev"><b>Password</b></label><br>
               <input type="password" placeholder="Enter Password" name="psw_rev" id="psw_rev" required><br>
-              <label for="steg_msg"><b> Steg Message</b></label><br>
+              <label for="ext_msg"><b> Steg Message</b></label><br>
               <input type="text" placeholder="Enter your steg message" name="steg_msg" id="steg_msg" required>
               <br>
               <button type="submit" class="revealbtn" onclick="onButtonClickReveal()">Get Secret    <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
@@ -77,7 +77,6 @@
               <h5><b>Here is your secret message!</b></h5>
               <input type="text" value='{{result_reveal}}' name="ext_msg" id="ext_msg"  required>
               {% endif %}
-              <div><input type="reset" value="Reset Form"></div>
             </form>
           </div>
 
